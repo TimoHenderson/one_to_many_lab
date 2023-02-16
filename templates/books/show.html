@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h3>{{ book.title }} </h3>
+<p><em>by {{ book.author.first_name }} {{book.author.last_name}}</em></p>
+<p>{{ book.genre }}</p>
+<a href="/books/{{book.id}}/edit">Edit Book</a>
+{% endblock content %}
